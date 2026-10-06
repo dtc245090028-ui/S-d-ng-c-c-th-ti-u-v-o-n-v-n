@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Đăng ký học viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="#" method="get">
+    <h2>Đăng ký học viên</h2>
+
+    <div class="field">
+        <label class="title" for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname">
+    </div>
+
+    <div class="field">
+        <label class="title" for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <div class="field">
+        <label class="title" for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+
+    <div class="field">
+        <label class="title" for="birthday">Ngày sinh</label>
+        <input type="date" id="birthday" name="birthday">
+    </div>
+
+    <div class="field">
+        <span class="title">Giới tính</span>
+        <div class="options">
+            <label><input type="radio" name="gender" value="male"> Nam</label>
+            <label><input type="radio" name="gender" value="female"> Nữ</label>
+            <label><input type="radio" name="gender" value="other"> Khác</label>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="title" for="address">Địa chỉ</label>
+        <textarea id="address" name="address" rows="2"></textarea>
+    </div>
+
+    <div class="field">
+        <label class="title" for="course">Khóa học</label>
+        <select id="course" name="course">
+            <option value="html-css">HTML &amp; CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <span class="title">Hình thức học</span>
+        <div class="options">
+            <label><input type="radio" name="study_type" value="online"> Online</label>
+            <label><input type="radio" name="study_type" value="offline"> Offline</label>
+        </div>
+    </div>
+
+    <div class="field">
+        <span class="title">Sở thích</span>
+        <div class="options">
+            <label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+            <label><input type="checkbox" name="hobby" value="music"> Nghe nhạc</label>
+            <label><input type="checkbox" name="hobby" value="sports"> Thể thao</label>
+            <label><input type="checkbox" name="hobby" value="travel"> Du lịch</label>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="title" for="note">Ghi chú</label>
+        <textarea id="note" name="note" rows="3"></textarea>
+    </div>
+
+    <div class="buttons">
+        <button type="submit">Đăng ký</button>
+        <button type="reset">Nhập lại</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    background: #eef3f7;
+    color: #22303c;
+    margin: 0;
+    padding: 24px 12px;
+}
+form {
+    max-width: 520px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 24px 28px;
+    border: 1px solid #cfd9e2;
+    border-radius: 6px;
+}
+h2 {
+    margin: 0 0 20px;
+    color: #1d5f8a;
+}
+.field {
+    margin-bottom: 16px;
+}
+label.title, .field > span.title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"],
+select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    font: inherit;
+    border: 1px solid #b8c6d2;
+    border-radius: 4px;
+}
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #1d5f8a;
+    border-color: #1d5f8a;
+}
+.options label {
+    display: inline-block;
+    margin-right: 16px;
+}
+.buttons {
+    margin-top: 24px;
+}
+button {
+    font: inherit;
+    padding: 9px 20px;
+    border-radius: 4px;
+    border: 1px solid #1d5f8a;
+    cursor: pointer;
+}
+button[type="submit"] { background: #1d5f8a; color: #fff; }
+button[type="reset"] { background: #fff; color: #1d5f8a; margin-left: 8px; }

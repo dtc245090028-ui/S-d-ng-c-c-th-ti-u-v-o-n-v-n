@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Form đơn giản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="#" method="get">
+    <h2>Thông tin cá nhân</h2>
+
+    <div class="field">
+        <label class="title" for="yourname">Họ và tên</label>
+        <input type="text" id="yourname" name="yourname">
+    </div>
+
+    <div class="field">
+        <label class="title" for="email">Email</label>
+        <input type="text" id="email" name="email">
+    </div>
+
+    <div class="field">
+        <span class="title">Sở thích</span>
+        <div class="options">
+            <label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+            <label><input type="checkbox" name="hobby" value="music"> Nghe nhạc</label>
+            <label><input type="checkbox" name="hobby" value="sports"> Thể thao</label>
+            <label><input type="checkbox" name="hobby" value="travel"> Du lịch</label>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button type="submit">Gửi thông tin</button>
+        <button type="reset">Nhập lại</button>
+    </div>
+</form>
+</body>
+</html>
