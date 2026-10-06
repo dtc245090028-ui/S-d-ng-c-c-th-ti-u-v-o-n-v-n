@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch họp công ty</title>
+</head>
+<body>
+  <h1>Lịch họp công ty</h1>
+
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+      <th>Ngày</th>
+      <th>Giờ</th>
+      <th>Nội dung cuộc họp</th>
+    </tr>
+
+    <!-- Thứ Hai: 3 cuộc họp -> rowspan="3" -->
+    <tr>
+      <td rowspan="3">Thứ Hai, 13/10/2026</td>
+      <td>08:30 - 09:30</td>
+      <td>Họp giao ban đầu tuần</td>
+    </tr>
+    <tr>
+      <td>10:00 - 11:30</td>
+      <td>Họp kế hoạch kinh doanh quý IV</td>
+    </tr>
+    <tr>
+      <td>14:00 - 15:00</td>
+      <td>Họp phòng Marketing</td>
+    </tr>
+
+    <!-- Thứ Tư: 2 cuộc họp -> rowspan="2" -->
+    <tr>
+      <td rowspan="2">Thứ Tư, 15/10/2026</td>
+      <td>09:00 - 10:00</td>
+      <td>Họp tiến độ dự án website</td>
+    </tr>
+    <tr>
+      <td>15:00 - 16:30</td>
+      <td>Đào tạo kỹ năng làm việc nhóm</td>
+    </tr>
+
+    <!-- Thứ Sáu: cuộc họp kéo dài cả ngày -> colspan="2" -->
+    <tr>
+      <td>Thứ Sáu, 17/10/2026</td>
+      <td colspan="2">08:00 - 17:00 | Hội thảo tổng kết quý và định hướng phát triển (cả ngày)</td>
+    </tr>
+  </table>
+</body>
+</html>
