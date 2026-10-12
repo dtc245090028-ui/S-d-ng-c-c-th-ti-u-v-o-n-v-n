@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành: Tạo Menu Dọc Dropdown</title>
+    <style>
+        /* 1. Reset lề và đặt font chữ mặc định để tránh khác biệt giữa các trình duyệt */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. Định dạng các mục chọn (li) */
+        #menu li {
+            list-style: none;             /* Bỏ bullet */
+            position: relative;           /* Làm mốc tọa độ cho menu con */
+            width: 100px;
+            height: 30px;                 /* Cố định kích thước */
+            padding: 0 20px;              /* Căn lề trái/phải */
+            background-color: black;      /* Màu nền đen */
+            line-height: 30px;            /* Căn giữa dòng chữ theo chiều cao */
+            cursor: pointer;              /* Đổi con trỏ thành hình bàn tay */
+        }
+
+        /* 3. Định dạng thẻ liên kết (a) bên trong danh sách */
+        #menu li a {
+            text-decoration: none;        /* Bỏ gạch chân */
+            color: white;                 /* Đổi chữ sang màu trắng */
+            display: block;               /* Giúp bấm được trên toàn bộ diện tích mục */
+        }
+
+        /* 4. Hiệu ứng đổi màu nền khi rê chuột vào mục chọn */
+        #menu li:hover {
+            background-color: #333333;
+        }
+
+        /* 5. Định dạng menu con (ul nằm trong li) */
+        #menu li ul {
+            position: absolute;           /* Cố định vị trí xuất hiện */
+            top: 0;
+            left: 140px;                  /* Bằng width (100px) + padding trái/phải (20px*2) */
+            visibility: hidden;           /* Mặc định ẩn menu con */
+        }
+
+        /* 6. Hiển thị menu con khi rê chuột vào phần tử cha */
+        #menu li:hover > ul {
+            visibility: visible;          /* Hiện menu con */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Sản phẩm</a>
+                <!-- Menu con cấp 1 -->
+                <ul>
+                    <li><a href="#">Laptop</a></li>
+                    <li>
+                        <a href="#">Điện thoại</a>
+                        <!-- Menu con cấp 2 (nếu muốn mở rộng thêm) -->
+                        <ul>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Samsung</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Phụ kiện</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
