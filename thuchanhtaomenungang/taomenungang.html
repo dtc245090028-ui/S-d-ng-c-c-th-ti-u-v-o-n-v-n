@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành: Tạo Menu Ngang Dropdown</title>
+    <style>
+        /* 1. Thiết lập font chữ và reset khoảng cách */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. Định dạng khung chứa toàn bộ menu */
+        #menu {
+            height: 40px;
+            background-color: #333;
+            border-radius: 4px;
+        }
+
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 3. Dàn các mục cấp 1 nằm trên cùng một hàng ngang */
+        #menu ul li {
+            float: left;
+            position: relative; /* Làm gốc tọa độ cho menu con thả xuống */
+        }
+
+        /* 4. Định dạng thẻ liên kết (a) bên trong trình đơn */
+        #menu ul li a {
+            display: block;
+            width: 130px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #333;
+            font-weight: bold;
+        }
+
+        /* 5. Đổi màu nền sang màu đỏ khi đưa con trỏ chuột qua liên kết */
+        #menu ul li a:hover {
+            background-color: red;
+        }
+
+        /* 6 & 7. Định dạng danh sách con (vị trí rơi xuống và ẩn mặc định) */
+        #menu ul ul {
+            position: absolute;
+            top: 40px;           /* Bằng đúng chiều cao thanh menu cha */
+            left: 0;
+            visibility: hidden;  /* Ẩn danh sách con khi chưa rê chuột */
+            z-index: 999;
+        }
+
+        /* Các mục trong menu con xếp dọc trở lại */
+        #menu ul ul li {
+            float: none;
+        }
+
+        /* 8. Hiển thị trình đơn con khi con trỏ đưa qua mục chọn của trình đơn cha */
+        #menu ul li:hover > ul {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Khung trình đơn với các danh sách lồng nhau 2 cấp -->
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Máy tính bảng</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Dịch vụ</a>
+                <ul>
+                    <li><a href="#">Bảo hành</a></li>
+                    <li><a href="#">Sửa chữa</a></li>
+                    <li><a href="#">Tư vấn</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
