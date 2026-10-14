@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav a{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0a0101;
+    background-color: #ebeaef;
+}
+nav a:hover{
+    background-color: #e01212;
+}
+
+section{
+    margin: 20px 0;
+}
+
+section div{
+ display: inline-block;
+    width: 200px;
+    padding: 20px;
+    background-color: lightblue;
+    margin: 10px;
+}
