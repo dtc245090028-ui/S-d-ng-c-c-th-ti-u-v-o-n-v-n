@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhật ký lập trình - Bố cục responsive với Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Nhật ký lập trình</h1>
+            <p>Ghi lại hành trình học web từ những bước đầu tiên</p>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Bài viết</a>
+            <a href="#">Bài tập</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <div class="main-container">
+            <main class="content">
+                <article>
+                    <h2>Flexbox là gì?</h2>
+                    <p>Flexbox là mô hình bố cục một chiều, giúp sắp xếp các phần tử theo hàng hoặc theo cột và tự động chia không gian giữa chúng.</p>
+                </article>
+                <article>
+                    <h2>Vì sao dùng flex: 3 và flex: 1?</h2>
+                    <p>Hai giá trị này chia chiều rộng theo tỷ lệ 3 : 1, nên nội dung chính luôn rộng hơn cột phụ mà không cần tính toán pixel.</p>
+                </article>
+                <article>
+                    <h2>Responsive trên điện thoại</h2>
+                    <p>Chỉ cần đổi <code>flex-direction</code> thành <code>column</code> trong media query, các khối sẽ xếp dọc gọn gàng.</p>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Tin mới</h2>
+                <ul>
+                    <li>Cách căn giữa phần tử bằng Flexbox</li>
+                    <li>Grid hay Flexbox: nên chọn cái nào?</li>
+                    <li>Đưa bài tập lên GitHub Pages</li>
+                </ul>
+                <div class="ad">Vị trí quảng cáo</div>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Nhật ký lập trình. Bài tập CSS Flexbox.</p>
+        </footer>
+    </div>
+</body>
+</html>
