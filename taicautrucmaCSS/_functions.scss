@@ -1,0 +1,11 @@
+// ==========================================================
+// HÀM (FUNCTIONS)
+// ==========================================================
+@use "sass:math";
+@use "variables" as *;
+
+// Tính độ rộng cột theo số cột chiếm trên tổng $grid-columns
+// column-width(3) => 25%   |   column-width(1) => 8.3333333333%
+@function column-width($span, $columns: $grid-columns) {
+  @return math.percentage(math.div($span, $columns));
+}

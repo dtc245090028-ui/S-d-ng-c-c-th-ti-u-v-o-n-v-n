@@ -1,0 +1,18 @@
+// ==========================================================
+// MIXIN – đoạn mã dùng lại được, có tham số
+// ==========================================================
+@use "variables" as *;
+@use "functions" as *;
+
+// Ô chiếm trọn chiều ngang với một màu nền (header / footer)
+@mixin solid-bar($color) {
+  width: column-width($grid-columns);
+  background: $color;
+  border-right-color: transparent;
+}
+
+// Ô nền trắng, không viền
+@mixin plain-cell {
+  background-color: $color-white;
+  border: none;
+}

@@ -1,0 +1,37 @@
+// ==========================================================
+// BIẾN (VARIABLES) – gom toàn bộ "con số/màu" vào một chỗ
+// ==========================================================
+
+// ----- Lưới -----
+$grid-columns: 12;
+
+// ----- Màu sắc -----
+$color-white: #ffffff;
+$color-cell: #f1f1f1;
+$color-border: grey;
+$color-header: #9933cc;
+$color-footer: #0099cc;
+$color-block: #33b5e5;
+$color-guide-line: #000000;
+
+// ----- Kích thước -----
+$row-height-default: 250px;
+
+// Map chiều cao từng hàng -> dùng với @each để sinh class
+$row-heights: (
+  header: 90px,
+  content: 230px,
+  footer: 50px,
+  guide: 370px,
+);
+
+$cell-padding-top: 15px;
+$block-gap: 10px;
+$block-height: 15%;
+$block-height-tall: 92%;
+
+// ----- Lớp phủ (overlay) -----
+$overlay-offset-left: 8px;
+$overlay-offset-right: 10px;
+$opacity-layout: 0.9;
+$opacity-guide: 0.1;

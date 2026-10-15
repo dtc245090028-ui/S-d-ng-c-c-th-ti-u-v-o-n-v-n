@@ -1,0 +1,97 @@
+// ==========================================================
+// GRID – layout chia 12 cột responsive
+// ==========================================================
+@use "variables" as *;
+@use "functions" as *;
+@use "mixins" as *;
+
+// ----- Lớp phủ tuyệt đối chứa layout màu -----
+.gridoverlay {
+  position: absolute;
+  opacity: $opacity-layout;
+  width: auto;
+  left: $overlay-offset-left;
+  right: $overlay-offset-right;
+}
+
+// ----- Container -----
+.gridcontainer {
+  // => .gridcontainer--guide (lưới hướng dẫn mờ phía sau)
+  &--guide {
+    opacity: $opacity-guide;
+  }
+}
+
+// ----- Hàng -----
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: $row-height-default;
+
+  // Sinh .gridwrapper--header, --content, --footer, --guide từ map $row-heights
+  @each $name, $height in $row-heights {
+    &--#{$name} {
+      height: $height;
+    }
+  }
+}
+
+// ----- Ô (cột) -----
+.gridcontent {
+  float: left;
+  width: column-width(1); // mặc định chiếm 1/12
+  height: 100%;
+  margin: 0;
+  border-right: 1px solid $color-border;
+  background-color: $color-cell;
+
+  &--header {
+    @include solid-bar($color-header);
+  }
+
+  &--footer {
+    @include solid-bar($color-footer);
+  }
+
+  &--content {
+    @include plain-cell;
+  }
+
+  &--sidebar {
+    @include plain-cell;
+    padding-top: $cell-padding-top;
+  }
+
+  &--guide {
+    background-color: $color-white;
+    border-right: 1px solid $color-guide-line;
+
+    &:first-child {
+      border-left: 1px solid $color-guide-line;
+    }
+  }
+}
+
+// ----- Sinh class độ rộng: .col-1 ... .col-12 -----
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: column-width($i);
+  }
+}
+
+// ----- Khối màu xanh trong cột sidebar -----
+.gridblock {
+  width: 100%;
+  height: $block-height;
+  margin-bottom: $block-gap;
+  border: none;
+  background-color: $color-block;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--tall {
+    height: $block-height-tall;
+  }
+}
