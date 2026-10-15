@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS | flex-grow</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    h2 {
+        margin: 30px 0 10px;
+    }
+
+    .container {
+        display: flex;
+        width: 700px;
+        border: 2px solid #333;
+    }
+
+    .container div {
+        width: 60px;
+        padding: 10px;
+        background-color: lightblue;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+
+    /* Chỉ div thứ 2 được phát triển */
+    .container .grow {
+        flex-grow: 4;
+        background-color: lightcoral;
+    }
+</style>
+</head>
+<body>
+
+<h2>flex-grow: 4 áp dụng cho div thứ 2</h2>
+<div class="container">
+    <div>1</div>
+    <div class="grow">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+
+</body>
+</html>
