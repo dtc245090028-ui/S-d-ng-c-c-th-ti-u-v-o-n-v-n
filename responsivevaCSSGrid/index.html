@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góc học Web - Bố cục responsive với CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Góc học Web</h1>
+            <p>Thực hành HTML, CSS và JavaScript mỗi ngày</p>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Bài học</a>
+            <a href="#">Bài tập</a>
+            <a href="#">Dự án</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <main class="content">
+            <article>
+                <h2>CSS Grid là gì?</h2>
+                <p>CSS Grid là hệ thống bố cục hai chiều, cho phép sắp xếp phần tử theo cả hàng và cột. Nhờ <code>grid-template-areas</code>, bạn có thể đặt tên cho từng vùng và thay đổi vị trí chỉ bằng vài dòng CSS.</p>
+            </article>
+            <article>
+                <h2>Responsive với Media Queries</h2>
+                <p>Bằng cách dùng <code>@media</code>, bố cục có thể đổi từ nhiều cột trên máy tính sang một cột trên điện thoại mà không cần sửa HTML.</p>
+            </article>
+            <article>
+                <h2>Mẹo thực hành</h2>
+                <p>Hãy mở DevTools của trình duyệt, kéo thay đổi chiều rộng cửa sổ và quan sát bố cục thay đổi tại mốc 768px.</p>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h2>Tin mới</h2>
+            <ul>
+                <li>Ra mắt khóa học CSS Grid cơ bản</li>
+                <li>Cách chia sẻ dự án lên GitHub Pages</li>
+                <li>10 lỗi CSS thường gặp ở người mới</li>
+            </ul>
+            <div class="ad">Vị trí quảng cáo</div>
+        </aside>
+
+        <footer class="footer">
+            <p>&copy; 2026 Góc học Web. Bài tập CSS Grid.</p>
+        </footer>
+    </div>
+</body>
+</html>

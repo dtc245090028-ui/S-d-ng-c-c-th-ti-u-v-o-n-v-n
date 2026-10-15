@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background-color: #eef2f3;
+}
+
+/* Desktop: header / nav / (content + sidebar) / footer */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header  header"
+        "nav     nav"
+        "content sidebar"
+        "footer  footer";
+    gap: 16px;
+    min-height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #0f4c5c;
+    color: #fff;
+    padding: 28px 24px;
+    border-radius: 6px;
+}
+
+.header p {
+    margin-top: 4px;
+    opacity: 0.85;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    gap: 8px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.nav a {
+    padding: 10px 16px;
+    color: #0f4c5c;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+    background-color: #d9ebee;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    gap: 16px;
+    align-content: start;
+}
+
+.content article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.content h2,
+.sidebar h2 {
+    margin-bottom: 8px;
+    color: #0f4c5c;
+}
+
+.content code {
+    background-color: #eef2f3;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    align-self: start;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e1e7ea;
+}
+
+.ad {
+    margin-top: 16px;
+    padding: 40px 10px;
+    text-align: center;
+    background-color: #f4e9c8;
+    color: #6b5a1e;
+    border-radius: 4px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #0f4c5c;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+/* Mobile: xếp dọc theo thứ tự header, nav, content, sidebar, footer */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "content"
+            "sidebar"
+            "footer";
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+}
