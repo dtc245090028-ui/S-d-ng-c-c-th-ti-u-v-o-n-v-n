@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | flex-wrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Thuộc tính flex-wrap</h1>
+
+    <div class="controls">
+        <button type="button" data-value="nowrap">nowrap</button>
+        <button type="button" data-value="wrap" class="active">wrap</button>
+        <button type="button" data-value="wrap-reverse">wrap-reverse</button>
+        <button type="button" data-value="initial">initial</button>
+    </div>
+
+    <p class="current">Đang áp dụng: <code id="current-value">flex-wrap: wrap;</code></p>
+
+    <div class="container" id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const label = document.getElementById('current-value');
+        const buttons = document.querySelectorAll('.controls button');
+
+        buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                const value = button.dataset.value;
+                container.style.flexWrap = value;
+                label.textContent = 'flex-wrap: ' + value + ';';
+                buttons.forEach(function (b) { b.classList.remove('active'); });
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

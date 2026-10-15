@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Ví dụ tổng hợp theo đề bài */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 300px;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.item {
+    width: 180px;
+    height: 80px;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Phần giao diện phụ để đổi giá trị flex-wrap */
+.controls {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0 8px;
+}
+
+.controls button {
+    padding: 8px 14px;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.controls button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.current {
+    margin-bottom: 40px;
+}
+
+/* Chừa khoảng trống phía trên để wrap-reverse không đè lên nội dung */
+.container {
+    margin-top: 120px;
+}
