@@ -1,0 +1,157 @@
+:root {
+  --ink: #12303b;
+  --teal: #1b6f7a;
+  --teal-dark: #145862;
+  --tint: #e6f2f1;
+  --sun: #f2b705;
+  --sun-dark: #d9a200;
+  --paper: #ffffff;
+  --muted: #4d6670;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  font-family: "Be Vietnam Pro", system-ui, sans-serif;
+  color: var(--ink);
+  line-height: 1.65;
+  background: var(--paper);
+}
+
+h1, h2, h3, .navbar-brand { font-family: "Lora", Georgia, serif; font-weight: 700; }
+h3 { font-size: 1.2rem; }
+
+/* Nav */
+.site-nav { background: var(--ink); }
+.site-nav .navbar-brand { color: #fff; font-size: 1.25rem; }
+.site-nav .nav-link { color: rgba(255, 255, 255, .85); }
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus { color: var(--sun); }
+.site-nav .navbar-toggler { border-color: rgba(255, 255, 255, .5); }
+.site-nav .navbar-toggler-icon { filter: invert(1); }
+
+/* Buttons */
+.btn-sun { background: var(--sun); border-color: var(--sun); color: var(--ink); font-weight: 700; }
+.btn-sun:hover, .btn-sun:focus { background: var(--sun-dark); border-color: var(--sun-dark); color: var(--ink); }
+.btn-teal { background: var(--teal); border-color: var(--teal); color: #fff; font-weight: 700; }
+.btn-teal:hover, .btn-teal:focus { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+
+/* Hero */
+.hero {
+  background: var(--teal);
+  color: #fff;
+  padding: 120px 0 80px;
+}
+.hero .lead { max-width: 36em; color: rgba(255, 255, 255, .92); }
+.hero-meta li { margin-bottom: .25rem; }
+.hero-meta i { color: var(--sun); margin-right: .5rem; }
+
+/* CSS-drawn book cover */
+.book-cover {
+  position: relative;
+  width: min(100%, 270px);
+  aspect-ratio: 3 / 4;
+  padding: 1.5rem 1.25rem 1.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 4px 10px 10px 4px;
+  border-left: 14px solid var(--sun);
+  box-shadow: 14px 16px 0 rgba(0, 0, 0, .25);
+  transform: rotate(2deg);
+}
+.book-cover__tag { font-size: .8rem; color: var(--sun); }
+.book-cover__title { font-family: "Lora", Georgia, serif; font-size: 1.75rem; line-height: 1.2; font-weight: 700; }
+.book-cover__code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .8rem; color: #8fd3d9; }
+.book-cover__author { font-size: .9rem; border-top: 1px solid rgba(255, 255, 255, .3); padding-top: .6rem; }
+
+/* Sections */
+.section { padding: 80px 0; }
+.section--tint { background: var(--tint); }
+.section--dark { background: var(--ink); color: #fff; }
+.section-head { max-width: 38em; margin: 0 auto 2.5rem; text-align: center; }
+.section-head p { color: var(--muted); }
+h2 { font-size: calc(1.4rem + 1vw); margin-bottom: 1rem; }
+
+/* Author */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
+  flex-shrink: 0;
+}
+.avatar--lg { width: 160px; height: 160px; font-size: 3rem; font-family: "Lora", Georgia, serif; border: 6px solid var(--sun); }
+.icon-link { color: var(--teal); }
+.icon-link:hover, .icon-link:focus { color: var(--ink); }
+
+/* Features */
+.feature { padding: 1.5rem; background: var(--paper); border-left: 4px solid var(--teal); height: 100%; }
+.feature i { font-size: 1.75rem; color: var(--teal); }
+.feature h3 { margin: .5rem 0; }
+.feature p { margin: 0; color: var(--muted); }
+
+/* Prices */
+.price-card {
+  position: relative;
+  padding: 2rem 1.5rem;
+  border: 2px solid var(--tint);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.price-card ul { flex-grow: 1; margin: 1rem 0 1.5rem; }
+.price-card li { margin-bottom: .4rem; }
+.price-card .bi-check2 { color: var(--teal); margin-right: .4rem; }
+.price { font-size: 2rem; font-weight: 700; margin: .5rem 0 0; }
+.price small { font-size: 1rem; font-weight: 400; color: var(--muted); }
+.price-card--best { border-color: var(--sun); box-shadow: 0 8px 0 var(--sun); }
+.badge-best { position: absolute; top: -14px; left: 1.5rem; background: var(--sun); color: var(--ink); font-weight: 700; padding: .4rem .8rem; }
+
+/* Download */
+.download-list li {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.download-list i { color: var(--sun); font-size: 1.4rem; }
+.download-list span { margin-left: auto; color: rgba(255, 255, 255, .7); font-size: .9rem; }
+
+/* Reader's say */
+.review { margin: 0; padding: 1.5rem; background: var(--tint); border-radius: 12px; display: flex; flex-direction: column; }
+.review blockquote { flex-grow: 1; margin: 0 0 1.25rem; font-size: 1.02rem; }
+.review figcaption { display: flex; align-items: center; gap: .75rem; font-size: .9rem; line-height: 1.4; }
+
+/* Footer */
+.site-footer { background: var(--ink); color: rgba(255, 255, 255, .8); padding: 56px 0 24px; }
+.site-footer a { color: rgba(255, 255, 255, .8); text-decoration: none; }
+.site-footer a:hover, .site-footer a:focus { color: var(--sun); text-decoration: underline; }
+.site-footer h3 { color: #fff; font-family: "Be Vietnam Pro", sans-serif; }
+.site-footer li { margin-bottom: .3rem; }
+.site-footer hr { border-color: rgba(255, 255, 255, .25); margin: 2rem 0 1rem; }
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .hero { padding: 100px 0 60px; text-align: center; }
+  .hero .lead { margin-left: auto; margin-right: auto; }
+  .hero .d-flex { justify-content: center; }
+  .hero-meta { display: inline-block; text-align: left; }
+  .section { padding: 60px 0; }
+  .navbar-collapse { padding: .75rem 0; }
+}
+@media (max-width: 575.98px) {
+  .book-cover { box-shadow: 8px 10px 0 rgba(0, 0, 0, .25); }
+  .avatar--lg { width: 120px; height: 120px; font-size: 2.25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

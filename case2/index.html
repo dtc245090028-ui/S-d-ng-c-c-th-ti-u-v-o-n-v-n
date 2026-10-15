@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lập trình Web từ con số 0 – Giới thiệu sách</title>
+  <meta name="description" content="Giới thiệu sách Lập trình Web từ con số 0: học HTML, CSS, Bootstrap qua các dự án nhỏ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lora:wght@600;700&display=swap&subset=vietnamese" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-nav">
+      <div class="container">
+        <a class="navbar-brand" href="#overview">Web từ con số 0</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#overview">Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#author">Tác giả</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Nội dung</a></li>
+            <li class="nav-item"><a class="nav-link" href="#prices">Giá sách</a></li>
+            <li class="nav-item"><a class="nav-link" href="#download">Tải về</a></li>
+            <li class="nav-item"><a class="nav-link" href="#readers">Độc giả</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-sun btn-sm" href="#prices">Mua sách</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BOOK OVERVIEW -->
+    <section id="overview" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <h1 class="display-4 mb-3">Lập trình Web từ con số 0</h1>
+            <p class="lead mb-4">Cuốn sách dành cho người mới bắt đầu. Bạn sẽ học HTML, CSS và Bootstrap qua 12 dự án nhỏ, và kết thúc bằng một trang web hoàn chỉnh của riêng mình.</p>
+            <ul class="list-unstyled hero-meta mb-4">
+              <li><i class="bi bi-journal-text"></i> 320 trang, 12 chương</li>
+              <li><i class="bi bi-translate"></i> Tiếng Việt</li>
+              <li><i class="bi bi-calendar3"></i> Tái bản lần 2 – 2026</li>
+            </ul>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#prices" class="btn btn-sun btn-lg">Xem giá sách</a>
+              <a href="#download" class="btn btn-outline-light btn-lg">Đọc thử chương 1</a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center">
+            <div class="book-cover" role="img" aria-label="Bìa sách Lập trình Web từ con số 0">
+              <span class="book-cover__tag">Dành cho người mới</span>
+              <span class="book-cover__title">Lập trình Web<br>từ con số 0</span>
+              <span class="book-cover__code">&lt;html&gt;<br>&nbsp;&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Xin chào!</span>
+              <span class="book-cover__author">Nguyễn Minh Khoa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHOR -->
+    <section id="author" class="section">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-md-4 col-lg-3 text-center">
+            <div class="avatar avatar--lg" aria-hidden="true">MK</div>
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <h2>Tác giả: Nguyễn Minh Khoa</h2>
+            <p class="mb-3">Minh Khoa có hơn 8 năm làm lập trình viên web và 5 năm giảng dạy cho người chưa từng viết code. Anh từng hướng dẫn hơn 2.000 học viên làm website đầu tiên.</p>
+            <p class="mb-3">Anh viết cuốn sách này theo cách mình mong muốn có khi mới bắt đầu: giải thích ngắn gọn, ví dụ chạy được ngay, và mỗi chương đều có một sản phẩm nhỏ để bạn tự làm.</p>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" class="icon-link" aria-label="Facebook của tác giả"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="icon-link" aria-label="GitHub của tác giả"><i class="bi bi-github"></i></a>
+              <a href="#" class="icon-link" aria-label="Email tác giả"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section section--tint">
+      <div class="container">
+        <div class="section-head">
+          <h2>Bạn sẽ học được gì</h2>
+          <p>Sách đi từ trang web đầu tiên đến trang web chạy tốt trên mọi màn hình.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <i class="bi bi-code-slash"></i>
+              <h3>HTML và CSS căn bản</h3>
+              <p>Viết cấu trúc trang, định dạng chữ, màu sắc và bố cục từ những bước đầu tiên.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <i class="bi bi-grid-1x2"></i>
+              <h3>Bootstrap 5</h3>
+              <p>Dùng hệ thống lưới, thanh điều hướng, thẻ và biểu mẫu để dựng giao diện nhanh.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <i class="bi bi-phone"></i>
+              <h3>Responsive</h3>
+              <p>Làm trang web hiển thị đẹp trên điện thoại, máy tính bảng và máy tính để bàn.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <i class="bi bi-hammer"></i>
+              <h3>12 dự án thực hành</h3>
+              <p>Mỗi chương kết thúc bằng một sản phẩm nhỏ, như trang cá nhân, landing page, trang tin tức.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <i class="bi bi-git"></i>
+              <h3>Git và GitHub</h3>
+              <p>Lưu mã nguồn, theo dõi thay đổi và đưa trang web lên GitHub Pages miễn phí.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <i class="bi bi-life-preserver"></i>
+              <h3>Bài tập có lời giải</h3>
+              <p>Cuối mỗi chương có bài tập và đáp án chi tiết để bạn tự kiểm tra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section id="prices" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Chọn phiên bản phù hợp</h2>
+          <p>Mua một lần, đọc mãi mãi. Miễn phí vận chuyển cho đơn từ 200.000₫.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="price-card h-100">
+              <h3>Ebook</h3>
+              <p class="price">99.000₫</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2"></i> File PDF và EPUB</li>
+                <li><i class="bi bi-check2"></i> Mã nguồn các dự án</li>
+                <li><i class="bi bi-check2"></i> Cập nhật miễn phí</li>
+              </ul>
+              <a href="#" class="btn btn-teal w-100">Mua ebook</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="price-card price-card--best h-100">
+              <span class="badge badge-best">Được chọn nhiều nhất</span>
+              <h3>Sách in + Ebook</h3>
+              <p class="price">249.000₫ <small class="text-decoration-line-through">288.000₫</small></p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2"></i> Sách in bìa mềm</li>
+                <li><i class="bi bi-check2"></i> Ebook PDF và EPUB</li>
+                <li><i class="bi bi-check2"></i> Mã nguồn các dự án</li>
+                <li><i class="bi bi-check2"></i> Hỗ trợ giải đáp qua email</li>
+              </ul>
+              <a href="#" class="btn btn-sun w-100">Mua combo</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="price-card h-100">
+              <h3>Sách in</h3>
+              <p class="price">189.000₫</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2"></i> Sách in bìa mềm</li>
+                <li><i class="bi bi-check2"></i> Giấy chất lượng cao</li>
+                <li><i class="bi bi-check2"></i> Mã nguồn các dự án</li>
+              </ul>
+              <a href="#" class="btn btn-teal w-100">Mua sách in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="section section--dark">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h2>Đọc thử trước khi mua</h2>
+            <p class="mb-4">Tải miễn phí chương 1 và bộ mã nguồn mẫu để xem cách sách hướng dẫn từng bước.</p>
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <a href="#" class="btn btn-sun btn-lg"><i class="bi bi-file-earmark-pdf"></i> Tải chương 1 (PDF)</a>
+              <a href="#" class="btn btn-outline-light btn-lg"><i class="bi bi-file-earmark-zip"></i> Tải mã nguồn mẫu</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <ul class="list-unstyled download-list mb-0">
+              <li><i class="bi bi-file-earmark-pdf"></i> Chương 1: Trang web đầu tiên <span>2,1 MB</span></li>
+              <li><i class="bi bi-file-earmark-zip"></i> Mã nguồn chương 1–3 <span>480 KB</span></li>
+              <li><i class="bi bi-file-earmark-text"></i> Mục lục chi tiết <span>150 KB</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- READER'S SAY -->
+    <section id="readers" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Độc giả nói gì</h2>
+          <p>Một vài phản hồi từ những người đã đọc và làm theo sách.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <figure class="review h-100">
+              <blockquote>Mình chưa biết gì về code, đọc đến chương 4 là đã tự làm được trang giới thiệu bản thân. Giải thích rất dễ hiểu.</blockquote>
+              <figcaption><span class="avatar">TA</span> <span><strong>Trần Thu Anh</strong><br>Sinh viên năm nhất</span></figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <figure class="review h-100">
+              <blockquote>Các dự án nhỏ giúp mình giữ được động lực. Phần Bootstrap và responsive là phần mình thấy hữu ích nhất.</blockquote>
+              <figcaption><span class="avatar">LH</span> <span><strong>Lê Quốc Hưng</strong><br>Nhân viên văn phòng</span></figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <figure class="review h-100">
+              <blockquote>Tôi dùng sách này làm tài liệu cho lớp học thêm. Học sinh làm theo được và có sản phẩm để khoe sau mỗi buổi.</blockquote>
+              <figcaption><span class="avatar">PN</span> <span><strong>Phạm Ngọc Lan</strong><br>Giáo viên Tin học</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h3 class="h5">Lập trình Web từ con số 0</h3>
+          <p class="mb-0">Sách học HTML, CSS và Bootstrap cho người mới bắt đầu.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="h6">Điều hướng</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#overview">Giới thiệu</a></li>
+            <li><a href="#features">Nội dung</a></li>
+            <li><a href="#prices">Giá sách</a></li>
+            <li><a href="#download">Tải về</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h3 class="h6">Liên hệ</h3>
+          <ul class="list-unstyled mb-0">
+            <li><i class="bi bi-envelope"></i> hello@webtuconso0.vn</li>
+            <li><i class="bi bi-telephone"></i> 0123 456 789</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="small mb-0">&copy; 2026 Lập trình Web từ con số 0. Trang web được làm cho mục đích học tập.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
