@@ -1,0 +1,24 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Yêu cầu 1 và 2: Ô 1 chiếm 2 hàng, từ đường kẻ 1 đến đường kẻ 3 */
+.item1 {
+    background-color: orange;
+    grid-row: 1 / 3;
+}
+
+/* Yêu cầu 3: bỏ comment dòng dưới và xóa dòng grid-row: 1 / 3 ở trên */
+/* .item1 { grid-row: 2 / 4; } */
+
+/* Yêu cầu 4: bỏ comment dòng dưới và xóa dòng grid-row: 1 / 3 ở trên */
+/* .item1 { grid-row: span 2; } */
