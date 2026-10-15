@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+  <!-- CSS biên dịch từ SCSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark landing-nav">
+    <div class="container">
+      <a class="navbar-brand landing-nav__brand" href="#">Brand</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link landing-nav__link active" href="#featured">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link landing-nav__link" href="#statistics">Số liệu</a></li>
+          <li class="nav-item"><a class="nav-link landing-nav__link" href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="landing-header">
+    <div class="container">
+      <h1 class="landing-header__title">Tiêu đề landing page</h1>
+      <p class="landing-header__subtitle">Mô tả ngắn về chương trình / sản phẩm</p>
+      <a href="#featured" class="landing-header__cta">Tìm hiểu thêm</a>
+    </div>
+  </header>
+
+  <!-- SẢN PHẨM NỔI BẬT -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <h2 class="featured__title">Sản phẩm nổi bật</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="featured__card featured__card--frontend">
+            <div class="featured__icon"><i class="fas fa-laptop-code"></i></div>
+            <h5 class="featured__name">Frontend</h5>
+            <p>Mô tả ngắn về sản phẩm thứ nhất.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="featured__card featured__card--backend">
+            <div class="featured__icon"><i class="fas fa-server"></i></div>
+            <h5 class="featured__name">Backend</h5>
+            <p>Mô tả ngắn về sản phẩm thứ hai.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="featured__card featured__card--fullstack">
+            <div class="featured__icon"><i class="fas fa-layer-group"></i></div>
+            <h5 class="featured__name">Fullstack</h5>
+            <p>Mô tả ngắn về sản phẩm thứ ba.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SỐ LIỆU THỐNG KÊ -->
+  <section class="statistics" id="statistics">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-3 statistics__item">
+          <div class="statistics__number">1000+</div>
+          <div class="statistics__label">Học viên</div>
+        </div>
+        <div class="col-6 col-md-3 statistics__item">
+          <div class="statistics__number">50+</div>
+          <div class="statistics__label">Đối tác</div>
+        </div>
+        <div class="col-6 col-md-3 statistics__item">
+          <div class="statistics__number">95%</div>
+          <div class="statistics__label">Có việc làm</div>
+        </div>
+        <div class="col-6 col-md-3 statistics__item">
+          <div class="statistics__number">5</div>
+          <div class="statistics__label">Năm kinh nghiệm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="landing-footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="landing-footer__title">Về chúng tôi</h5>
+          <p>Giới thiệu ngắn về đơn vị.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="landing-footer__title">Liên kết</h5>
+          <a class="landing-footer__link" href="#featured">Sản phẩm</a>
+          <a class="landing-footer__link" href="#statistics">Số liệu</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="landing-footer__title">Kết nối</h5>
+          <div class="landing-footer__social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="landing-footer__copy">© 2026 Tên đơn vị. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>

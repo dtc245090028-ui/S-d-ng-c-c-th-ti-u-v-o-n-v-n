@@ -1,0 +1,32 @@
+@use "sass:color";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.landing-header {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, $color-dark, color.adjust($color-primary, $lightness: -25%));
+  color: $color-white;
+  text-align: center;
+
+  &__title {
+    font-size: rem(48);
+    font-weight: 700;
+
+    @include respond(md) {
+      font-size: rem(30);
+    }
+  }
+
+  &__subtitle {
+    margin: 16px 0 32px;
+    font-size: rem(20);
+    opacity: 0.85;
+  }
+
+  &__cta {
+    @include button;
+  }
+}

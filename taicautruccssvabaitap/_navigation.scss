@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+
+.landing-nav {
+  background: $color-dark;
+
+  &__brand {
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  &__link {
+    color: $color-white;
+    font-weight: 500;
+
+    &:hover,
+    &.active {
+      color: $color-primary;
+    }
+  }
+}

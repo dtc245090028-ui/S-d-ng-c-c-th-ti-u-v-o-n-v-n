@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.landing-footer {
+  padding: 48px 0 0;
+  background: $color-dark;
+  color: rgba($color-white, 0.7);
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: $color-white;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 8px;
+    color: inherit;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__social a {
+    margin-right: 12px;
+    font-size: 20px;
+    color: inherit;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__copy {
+    margin-top: 32px;
+    padding: 16px 0;
+    border-top: 1px solid rgba($color-white, 0.15);
+    text-align: center;
+
+    @include respond(md) {
+      font-size: 14px;
+    }
+  }
+}

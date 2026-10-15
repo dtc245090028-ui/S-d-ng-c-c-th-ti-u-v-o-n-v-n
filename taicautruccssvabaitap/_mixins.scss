@@ -1,0 +1,50 @@
+@use "sass:map";
+@use "variables" as *;
+
+// Media query responsive: @include respond(md) { ... } => màn hình < 768px
+@mixin respond($bp) {
+  $width: map.get($breakpoints, $bp);
+  @if $width {
+    @media (max-width: $width - 1px) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint '#{$bp}' không tồn tại trong $breakpoints";
+  }
+}
+
+// Padding chuẩn cho mỗi section
+@mixin section-padding {
+  padding: $section-padding 0;
+  @include respond(md) {
+    padding: $section-padding-sm 0;
+  }
+}
+
+// Thẻ (card) kiểu Material
+@mixin card($shadow: $shadow-card) {
+  background: $color-white;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  transition: box-shadow 0.3s, transform 0.3s;
+  &:hover {
+    box-shadow: $shadow-card-hover;
+    transform: translateY(-4px);
+  }
+}
+
+// Nút bấm
+@mixin button($bg: $color-primary, $color: $color-white) {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 0;
+  border-radius: $radius;
+  background: $bg;
+  color: $color;
+  font-weight: 500;
+  text-transform: uppercase;
+  &:hover {
+    color: $color;
+    opacity: 0.9;
+  }
+}

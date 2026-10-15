@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.statistics {
+  @include section-padding;
+  background: $color-primary;
+  color: $color-white;
+  text-align: center;
+
+  &__item {
+    padding: 16px 0;
+  }
+
+  &__number {
+    font-size: rem(48);
+    font-weight: 700;
+
+    @include respond(md) {
+      font-size: rem(36);
+    }
+  }
+
+  &__label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+}

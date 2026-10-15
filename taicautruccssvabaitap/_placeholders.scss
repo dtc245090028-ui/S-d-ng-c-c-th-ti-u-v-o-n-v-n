@@ -1,0 +1,9 @@
+@use "variables" as *;
+
+// Placeholder (%) dùng chung – chỉ sinh CSS khi có nơi @extend
+%section-title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: $color-dark;
+}

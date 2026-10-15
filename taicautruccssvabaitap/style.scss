@@ -1,0 +1,8 @@
+// File chính – gom các phần lại. Đặt SAU file mdb.min.css trong HTML.
+@use "base/base";
+
+@use "sections/navigation";
+@use "sections/header";
+@use "sections/featured";
+@use "sections/statistics";
+@use "sections/footer";
